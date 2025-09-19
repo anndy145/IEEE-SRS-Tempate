@@ -1,128 +1,127 @@
-# IEEE-Tempate
-IEEE System Requirements Specification Template
+# IEEE 模板
+IEEE 系統需求規格模板
 
-# Software Requirements Specification
+# 軟體需求規範
 ## For  <project name>
 Version 1.0 approved
-Prepared by Andy <author>
+Prepared by Andy
 <organization>
 <date created>
 
-Table of Contents
-=================
-  * [Revision History](#revision-history)
-  * [Introduction](#1-introduction)
-    * 1.1 [Purpose](#11-purpose)
-    * 1.2 [Document Conventions](#12-document-conventions)
-    * 1.3 [Intended Audience and Reading Suggestions](#13-intended-audience-and-reading-suggestions)
-    * 1.4 [Product Scope](#14-product-scope)
-    * 1.5 [References](#15-references)
-  * [Overall Description](#overall-description)
-    * 2.1 [Product Perspective](#21-product-perspective)
-    * 2.2 [Product Functions](#22-product-functions)
-    * 2.3 [User Classes and Characteristics](#23-user-classes-and-characteristics)
-    * 2.4 [Operating Environment](#24-operating-environment)
-    * 2.5 [Design and Implementation Constraints](#25-design-and-implementation-constraints)
-    * 2.6 [User Documentation](#26-user-documentation)
-    * 2.7 [Assumptions and Dependencies](#27-assumptions-and-dependencies)
-  * [External Interface Requirements](#external-interface-requirements)
-    * 3.1 [User Interfaces](#31-user-interfaces)
-    * 3.2 [Hardware Interfaces](#32-hardware-interfaces)
-    * 3.3 [Software Interfaces](#33-software-interfaces)
-    * 3.4 [Communications Interfaces](#34-communications-interfaces)
-  * [System Features](#system-features)
-    * 4.1 [System Feature 1](#41-system-feature-1)
-    * 4.2 [System Feature 2 (and so on)](#42-system-feature-2-and-so-on)
-  * [Other Nonfunctional Requirements](#other-nonfunctional-requirements)
-    * 5.1 [Performance Requirements](#51-performance-requirements)
-    * 5.2 [Safety Requirements](#52-safety-requirements)
-    * 5.3 [Security Requirements](#53-security-requirements)
-    * 5.4 [Software Quality Attributes](#54-software-quality-attributes)
-    * 5.5 [Business Rules](#55-business-rules)
-  * [Other Requirements](#other-requirements)
-* [Appendix A: Glossary](#appendix-a-glossary)
-* [Appendix B: Analysis Models](#appendix-b-analysis-models)
-* [Appendix C: To Be Determined List](#appendix-c-to-be-determined-list)
+目錄
+===================
+* [修訂歷史](#revision-history)
+* [簡介](#1-簡介)
+* 1.1 [目的](#11-目的)
+* 1.2 [文檔約定](#12-文檔約定)
+* 1.3 [目標讀者與閱讀建議](#13-目標讀者與閱讀建議)
+* 1.4 [產品範圍](#14-產品範圍)
+* 1.5 [參考文獻](#15-參考文獻)
+* [總體描述](#總體描述)
+* 2.1 [產品視角](#21-產品視角)
+* 2.2 [產品功能](#22-產品功能)
+* 2.3 [使用者類別與特性](#23-使用者類別與特性)
+* 2.4 [操作環境](#24-操作環境)
+* 2.5 [設計與實作限制](#25-設計與實作限制)
+* 2.6 [使用者文件](#26-使用者文件)
+* 2.7 [假設與依賴關係](#27-假設與依賴關係)
+* [外部介面要求](#外部介面要求)
+* 3.1 [使用者介面](#31-使用者介面)
+* 3.2 [硬體介面](#32-硬體介面)
+* 3.3 [軟體介面](#33-軟體介面)
+* 3.4 [通訊介面](#34-通訊介面)
+* [系統功能](#system-features)
+* 4.1 [系統功能 1](#41-system-feature-1)
+* 4.2 [系統功能 2（等等）](#42-system-feature-2-and-so-on)
+* [其他非功能性需求](#other-nonfunctional-requirements)
+* 5.1 [效能要求](#51-performance-requirements)
+* 5.2 [安全要求](#52-safety-requirements)
+* 5.3 [安全要求](#53-security-requirements)
+* 5.4 [軟體品質屬性](#54-software-quality-attributes)
+* 5.5 [業務規則](#55-business-rules)
+* [其他要求](#other-requirements)
+* [附錄 A：詞彙表](#appendix-a-glossary)
+* [附錄 B：分析模型](#appendix-b-analysis-models)
+* [附錄 C：待定清單](#appendix-c-to-be-determined-list)
 
 
 
 
-## Revision History
-| Name | Date    | Reason For Changes  | Version   |
+## 修訂歷史
+| 姓名 |   日期   |       變更原因       |   版本    |
 | ---- | ------- | ------------------- | --------- |
 |      |         |                     |           |
 |      |         |                     |           |
 |      |         |                     |           |
 
-## 1. Introduction
-### 1.1 Purpose 
-Identify the product whose software requirements are specified in this document, including the revision or release number. Describe the scope of the product that is covered by this SRS, particularly if this SRS describes only part of the system or a single subsystem.
+## 1. 介紹
+### 1.1 目的 
+確定本文檔中指定了軟體需求的產品，包括修訂版或發行版號。描述本軟體需求規格 (SRS) 涵蓋的產品範圍，特別是當本軟體需求規格 (SRS) 僅描述系統的一部分或單一子系統時。
 
-### 1.2 Document Conventions
-Describe any standards or typographical conventions that were followed when writing this SRS, such as fonts or highlighting that have special significance. For example, state whether priorities  for higher-level requirements are assumed to be inherited by detailed requirements, or whether every requirement statement is to have its own priority.
-### 1.3 Intended Audience and Reading Suggestions
-Describe the different types of reader that the document is intended for, such as developers, project managers, marketing staff, users, testers, and documentation writers. Describe what the rest of this SRS contains and how it is organized. Suggest a sequence for reading the document, beginning with the overview sections and proceeding through the sections that are most pertinent to each reader type.
-### 1.4 Product Scope
-Provide a short description of the software being specified and its purpose, including relevant benefits, objectives, and goals. Relate the software to corporate goals or business strategies. If a separate vision and scope document is available, refer to it rather than duplicating its contents here.
-### 1.5 References
-List any other documents or Web addresses to which this SRS refers. These may include user interface style guides, contracts, standards, system requirements specifications, use case documents, or a vision and scope document. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.
+### 1.2 文件約定
+描述編寫此 SRS 時遵循的任何標準或排版約定，例如具有特殊意義的字體或突出顯示。例如，說明是否假定較高層級需求的優先順序由詳細需求繼承，或每個需求語句是否都有自己的優先順序。
+### 1.3 目標讀者與閱讀建議
+請描述本文檔的目標讀者類型，例如開發人員、專案經理、行銷人員、使用者、測試人員和文件撰寫者。請描述本 SRS 的其餘部分及其組織結構。建議閱讀本文檔的順序：從概述部分開始，然後閱讀與每種讀者類型最相關的部分。
+### 1.4 產品範圍
+請簡述所指定的軟體及其用途，包括相關的優勢、目標和目標。請將軟體與公司目標或業務策略連結。如果有單獨的願景和範圍文檔，請參考該文檔，而不要在此處重複其內容。
+### 1.5 參考文獻
+列出本 SRS 引用的任何其他文件或網址。這些文件或網址可能包括使用者介面風格指南、合約、標準、系統需求規格、使用案例文件或願景和範圍文件。請提供足夠的信息，以便讀者可以訪問每個參考文獻的副本，包括標題、作者、版本號、日期以及來源或位置。
+## 總體描述
+### 2.1 產品視角
+描述本軟體需求規格書中所指定產品的背景和來源。例如，說明該產品是某個產品系列的後續產品、某些現有系統的替代品，或是獨立的新產品。如果軟體需求規格書定義了一個大型系統的元件，請將大型系統的需求與本軟體的功能連結起來，並確定兩者之間的介面。一張顯示整個系統主要元件、子系統互連和外部介面的簡單圖表會很有幫助。
+### 2.2 產品功能
+概述產品必須執行或必須允許使用者執行的主要功能。詳細資訊將在第 3 節中提供，因此此處只需進行簡要概述（例如項目符號清單）。請對功能進行組織，以便任何 SRS 讀者都能理解。通常，繪製主要相關需求組及其關聯關係的圖表（例如頂層資料流程圖或物件類別圖）會非常有效。
+### 2.3 使用者類別和特徵
+確定您預計將使用此產品的各種使用者類別。使用者類別可以根據使用頻率、所使用的產品功能子集、技術專長、安全或權限等級、教育程度或經驗進行區分。描述每個使用者類別的相關特徵。某些需求可能只適用於某些使用者類別。區分該產品最重要的使用者類別和較不重要的使用者類別。
+### 2.4 操作環境
+描述軟體的運作環境，包括硬體平台、作業系統及版本，以及任何其他必須與之和平共存的軟體元件或應用程式。
+### 2.5 設計與實作約束
+描述任何會限制開發人員可用選項的事項或問題。這些可能包括：公司或監管政策；硬體限制（時間要求、記憶體要求）；與其他應用程式的介面；要使用的特定技術、工具和資料庫；並行操作；語言要求；通訊協議；安全考慮；設計慣例或程式設計標準（例如，如果客戶的組織將負責維護交付的軟體）。
+### 2.6 使用者文檔
+列出將與軟體一起交付的用戶文件組件（例如用戶手冊、線上幫助和教程）。確定所有已知的使用者文件交付格式或標準。
+### 2.7 假設與依賴關係
+列出任何可能影響軟體需求規格 (SRS) 中所述要求的假設因素（而非已知事實）。這些因素可能包括與您計劃使用的第三方或商業組件、開發或操作環境相關的問題，或一些限制。如果這些假設不正確、未共享或發生變化，則項目可能會受到影響。此外，還要確定專案對外部因素的任何依賴關係，例如您打算從其他專案重複使用的軟體元件，除非這些元件已在其他地方記錄（例如，在願景和範圍文件或專案計劃中）。
+## 外部介面要求
+### 3.1 使用者介面
+描述軟體產品與使用者之間每個介面的邏輯特性。這可能包括範例螢幕圖像、任何需要遵循的 GUI 標準或產品系列樣式指南、螢幕佈局約束、每個螢幕上顯示的標準按鈕和功能（例如幫助）、鍵盤快捷鍵、錯誤訊息顯示標準等等。定義需要使用者介面的軟體元件。使用者介面設計的細節應記錄在單獨的使用者介面規格中。
+### 3.2 硬體介面
+描述軟體產品與系統硬體組件之間每個介面的邏輯和物理特性。這可能包括支援的設備類型、軟體和硬體之間資料和控制互動的性質，以及要使用的通訊協定。
+### 3.3 軟體接口
+描述本產品與其他特定軟體元件（名稱和版本）之間的連接，包括資料庫、作業系統、工具、庫和整合的商業組件。識別進出系統的資料項或訊息，並描述每個資料的用途。描述所需的服務和通訊性質。請參閱描述詳細應用程式介面 (API) 協定的文件。確定將在軟體組件之間共享的數據。如果資料共享機制必須以特定方式實作（例如，在多任務作業系統中使用全域資料區），請將其指定為實作約束。
+### 3.4 通訊介面
+描述與此產品所需的任何通訊功能相關的需求，包括電子郵件、Web 瀏覽器、網頁伺服器通訊協定、電子表格等。定義所有相關的訊息格式。確定將使用的任何通訊標準，例如 FTP 或 HTTP。指定所有通訊安全或加密問題、資料傳輸速率和同步機制。
+## 系統功能
+此範本示範如何依照系統功能（產品提供的主要服務）來組織產品的功能需求。您可以根據用例、操作模式、使用者類別、物件類別、功能層次結構或這些的組合來組織此部分，只要對您的產品而言最合理即可。
+### 4.1 系統功能 1
+不要直接說「系統功能 1」。只需用幾個字說明功能名稱即可。
+4.1.1 描述和優先級
+請提供該功能的簡短描述，並指出其優先順序是高、中或低。您還可以包含特定的優先組件評級，例如收益、損失、成本和風險（每個組件都按相對等級進行評級，從最低 1 到最高 9）。
+4.1.2 刺激/反應序列
+列出刺激此功能定義行為的使用者操作和系統反應序列。這些序列將對應於與用例相關的對話元素。
+4.1.3 功能需求
+請逐項列出與此功能相關的詳細功能需求。這些是使用者必須具備的軟體功能，才能使用該功能提供的服務或執行用例。需求包括產品應如何回應預期的錯誤情況或無效輸入。需求應簡潔、完整、明確、可驗證且必要。使用“TBD”作為佔位符，表示所需資訊尚未提供。
 
-## Overall Description
-### 2.1 Product Perspective
-Describe the context and origin of the product being specified in this SRS. For example, state whether this product is a follow-on member of a product family, a replacement for certain existing systems, or a new, self-contained product. If the SRS defines a component of a larger system, relate the requirements of the larger system to the functionality of this software and identify interfaces between the two. A simple diagram that shows the major components of the overall system, subsystem interconnections, and external interfaces can be helpful.
-### 2.2 Product Functions
-Summarize the major functions the product must perform or must let the user perform. Details will be provided in Section 3, so only a high level summary (such as a bullet list) is needed here. Organize the functions to make them understandable to any reader of the SRS. A picture of the major groups of related requirements and how they relate, such as a top level data flow diagram or object class diagram, is often effective.
-### 2.3 User Classes and Characteristics
-Identify the various user classes that you anticipate will use this product. User classes may be differentiated based on frequency of use, subset of product functions used, technical expertise, security or privilege levels, educational level, or experience. Describe the pertinent characteristics of each user class. Certain requirements may pertain only to certain user classes. Distinguish the most important user classes for this product from those who are less important to satisfy.
-### 2.4 Operating Environment
-Describe the environment in which the software will operate, including the hardware platform, operating system and versions, and any other software components or applications with which it must peacefully coexist.
-### 2.5 Design and Implementation Constraints
-Describe any items or issues that will limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).
-### 2.6 User Documentation
-List the user documentation components (such as user manuals, on-line help, and tutorials) that will be delivered along with the software. Identify any known user documentation delivery formats or standards.
-### 2.7 Assumptions and Dependencies
-List any assumed factors (as opposed to known facts) that could affect the requirements stated in the SRS. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project, unless they are already documented elsewhere (for example, in the vision and scope document or the project plan).
-## External Interface Requirements
-### 3.1 User Interfaces
-Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Define the software components for which a user interface is needed. Details of the user interface design should be documented in a separate user interface specification.
-### 3.2 Hardware Interfaces
-Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.
-### 3.3 Software Interfaces
-Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Refer to documents that describe detailed application programming interface protocols. Identify data that will be shared across software components. If the data sharing mechanism must be implemented in a specific way (for example, use of a global data area in a multitasking operating system), specify this as an implementation constraint.
-### 3.4 Communications Interfaces
-Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on. Define any pertinent message formatting. Identify any communication standards that will be used, such as FTP or HTTP. Specify any communication security or encryption issues, data transfer rates, and synchronization mechanisms.
-## System Features
-This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
-### 4.1 System Feature 1
-Don’t really say “System Feature 1.” State the feature name in just a few words.
-4.1.1   Description and Priority
- Provide a short description of the feature and indicate whether it is of High, Medium, or Low priority. You could also include specific priority component ratings, such as benefit, penalty, cost, and risk (each rated on a relative scale from a low of 1 to a high of 9).
-4.1.2   Stimulus/Response Sequences
- List the sequences of user actions and system responses that stimulate the behavior defined for this feature. These will correspond to the dialog elements associated with use cases.
-4.1.3   Functional Requirements
- Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute the use case. Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available.
- 
- Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind.
+每個需求都應使用序號或某種有意義的標籤進行唯一識別。
 
-### 4.2 System Feature 2 (and so on)
+### 4.2 系統特性 2（等）
 
-## Other Nonfunctional Requirements
-### 5.1 Performance Requirements
-If there are performance requirements for the product under various circumstances, state them here and explain their rationale, to help the developers understand the intent and make suitable design choices. Specify the timing relationships for real time systems. Make such requirements as specific as possible. You may need to state performance requirements for individual functional requirements or features.
-### 5.2 Safety Requirements
-Specify those requirements that are concerned with possible loss, damage, or harm that could result from the use of the product. Define any safeguards or actions that must be taken, as well as actions that must be prevented. Refer to any external policies or regulations that state safety issues that affect the product’s design or use. Define any safety certifications that must be satisfied.
-### 5.3 Security Requirements
-Specify any requirements regarding security or privacy issues surrounding use of the product or protection of the data used or created by the product. Define any user identity authentication requirements. Refer to any external policies or regulations containing security issues that affect the product. Define any security or privacy certifications that must be satisfied.
-### 5.4 Software Quality Attributes
-Specify any additional quality characteristics for the product that will be important to either the customers or the developers. Some to consider are: adaptability, availability, correctness, flexibility, interoperability, maintainability, portability, reliability, reusability, robustness, testability, and usability. Write these to be specific, quantitative, and verifiable when possible. At the least, clarify the relative preferences for various attributes, such as ease of use over ease of learning.
-### 5.5 Business Rules
-List any operating principles about the product, such as which individuals or roles can perform which functions under specific circumstances. These are not functional requirements in themselves, but they may imply certain functional requirements to enforce the rules.
+## 其他非功能性需求
+### 5.1 效能要求
+如果產品在各種情況下都有效能要求，請在此處說明並解釋其基本原理，以幫助開發人員理解其意圖並做出合適的設計選擇。請指定即時系統的時序關係。這些要求應盡可能具體。您可能需要針對單一功能需求或特性指定效能要求。
+### 5.2 安全要求
+請指定與產品使用過程中可能造成的損失、損壞或危害相關的要求。定義必須採取的任何安全措施或措施，以及必須避免的措施。請參考任何規定了影響產品設計或使用的安全問題的外部政策或法規。請定義必須滿足的任何安全認證。
+### 5.3 安全要求
+請指定與產品使用或產品使用或建立的資料保護相關的安全或隱私問題的任何要求。請定義任何使用者身份驗證要求。請參考任何包含影響產品安全問題的外部政策或法規。定義所有必須滿足的安全或隱私認證。
+### 5.4 軟體品質屬性
+指定產品對客戶或開發者重要的任何其他品質特性。需要考慮的一些特性包括：適應性、可用性、正確性、靈活性、互通性、可維護性、可移植性、可靠性、可重複使用性、健壯性、可測試性和易用性。盡可能將這些特性寫得具體、量化且可驗證。至少要明確各種屬性的相對優先級，例如易用性優先於易學性。
+### 5.5 業務規則
+列出產品的所有操作原則，例如在特定情況下哪些個人或角色可以執行哪些功能。這些原則本身並非功能需求，但它們可能隱含了某些功能需求，以執行規則。
 
-## Other Requirements
-Define any other requirements not covered elsewhere in the SRS. This might include database requirements, internationalization requirements, legal requirements, reuse objectives for the project, and so on. Add any new sections that are pertinent to the project.
-### Appendix A: Glossary
-Define all the terms necessary to properly interpret the SRS, including acronyms and abbreviations. You may wish to build a separate glossary that spans multiple projects or the entire organization, and just include terms specific to a single project in each SRS.
-### Appendix B: Analysis Models
-Optionally, include any pertinent analysis models, such as data flow diagrams, class diagrams, state-transition diagrams, or entity-relationship diagrams.
-### Appendix C: To Be Determined List
-Collect a numbered list of the TBD (to be determined) references that remain in the SRS so they can be tracked to closure.
+## 其他要求
+定義 SRS 中未涵蓋的任何其他要求。這可能包括資料庫要求、國際化要求、法律要求、專案重用目標等等。新增與專案相關的任何新章節。
+### 附錄 A：詞彙表
+定義正確解釋 SRS 所需的所有術語，包括首字母縮寫和縮寫。您可以建立涵蓋多個專案或整個組織的單獨詞彙表，並在每個 SRS 中僅包含特定於單一專案的術語。
+### 附錄 B：分析模型
+（可選）包含任何相關的分析模型，例如資料流程圖、類別圖、狀態轉換圖或實體關係圖。
+### 附錄 C：待定清單
+收集 SRS 中剩餘的待定 (TBD) 參考文獻的編號列表，以便追蹤它們直至收尾。
