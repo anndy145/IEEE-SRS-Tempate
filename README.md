@@ -12,14 +12,14 @@
 
 ## 目錄
 
-- [1. 簡介](#1-簡介-introduction)
-- [2. 系統整體描述](#2-系統整體描述-overall-description)
-- [3. 具體需求](#3-具體需求-specific-requirements)
-- [4. 系統功能](#4-系統功能-system-features)
-- [5. 其他需求](#5-其他需求-other-requirements)
-- [附錄 A: 字彙表](#附錄-a-字彙表-glossary)
-- [附錄 B: 分析模型](#附錄-b-分析模型-analysis-models)
-- [附錄 C: 測試需求](#附錄-c-測試需求-testing-requirements)
+- [1. 介紹 (Introduction)](#1-介紹-introduction)
+- [2. 總體描述 (Overall Description)](#2-總體描述)
+- [3. 外部介面要求 (Specific Requirements)](#3-外部介面要求)
+- [4. 系統功能 (System Features)](#4-系統功能)
+- [5. 其他非功能性需求 (Other Requirements)](#5-其他非功能性需求)
+- [附錄 A：詞彙表 (Glossary)](#附錄-a詞彙表)
+- [附錄 B：分析模型 (Analysis Models)](#附錄-b分析模型)
+- [附錄 C：待定清單 (Pending Items)](#附錄-c待定清單)
 
 ---
 
@@ -60,7 +60,7 @@
 
 本文件包含系統整體描述、具體需求規格、附錄等章節，詳細說明系統的功能需求、效能需求、介面需求等。
 
-## 總體描述
+## 2. 總體描述
 
 ### 2.1 產品概觀 (Product Perspective)
 
@@ -97,7 +97,7 @@
 
 ### 2.7 假設和相依性 (Assumptions and Dependencies)
 
-## 外部介面要求
+## 3. 外部介面要求
 
 ### 3.1 使用者介面
 
@@ -107,13 +107,13 @@
 
 ### 3.4 通訊介面
 
-## 系統功能
+## 4. 系統功能
 
 ### 4.1 系統功能 1
 
 ### 4.2 系統特性 2（等）
 
-## 其他非功能性需求
+## 5. 其他非功能性需求
 
 ### 5.1 效能要求
 
